@@ -1,0 +1,17 @@
+Sono state considerate le seguenti violazioni:
+
+1- numero non corretto di elementi in un record
+2- feature "seqname" non univoca
+3- feature "source" non univoca
+4- valore feature non tra quelli consentiti
+5- valore del campo start diverso da un numero intero > 0
+6- valore del campo end diverso da un numero intero > 0
+7- valore del campo end < start 
+8- lunghezza > 3bp nei casi feature('stop_codon', 'start_codon')
+9- score diverso diverso da un numero intero/float 
+10- score diverso da '.' se non si è nel caso precedente
+11- strand diverso da +/-
+12- frame diverso da (0, 1, 2) nei casi feature('CDS', 'start_codon', 'stop_codon') 
+13- frame diverso da '.' se non si è nel caso feature('CDS', 'start_codon', 'stop_codon')
+14- mancanza degli attributi 'transcript_id'/'gene_id'
+15- mancanza di record con feature ('CDS', 'start_codon', 'stop_codon', 'exon') [REQUIRED]
